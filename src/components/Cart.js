@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from "react";
+import React from "react";
 
 export default function Cart(props){
 
@@ -6,12 +6,7 @@ export default function Cart(props){
     const itemsPrice=cartItems.reduce((a,c)=>a+c.price*c.qty,0);
     
 
-    const [string,setString]=useState("");
-    useEffect(()=>{
-        const string=`Hola%2C+vengo+de+la+app+de+carlos+y+quiero+comprar%3A%0D%0A%0D%0A${cartItems.map(item=>`*${item?.name}* *=* *${item?.price}* *x* *${item?.qty}* `)}%0D%0A*Precio:${itemsPrice}*%2F%0D%0A%0D%0AGracias%21`;
-        setString(string);
-        //eslint-disable-next-line
-    },[cartItems]);
+   
    
 
     return (
