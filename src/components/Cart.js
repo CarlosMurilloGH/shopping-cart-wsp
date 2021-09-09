@@ -38,7 +38,7 @@ export default function Cart(props){
                         <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
                     </div>
                     <div>
-                        <a target="_blank" rel="noreferrer" href={`https://web.whatsapp.com/send?phone=51956348183&text=hola` }>
+                        <a target="_blank" rel="noreferrer" href={`https://api.whatsapp.com/send?phone=51956348183&text=hola` }>
                         <button >Enviar pedido</button>
                         </a>
                     </div>  
