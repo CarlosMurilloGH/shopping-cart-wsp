@@ -8,14 +8,11 @@ export default function Cart(props){
 
     const [string,setString]=useState("");
     useEffect(()=>{
-        const string=`
-        productos:${cartItems.map(item=>`${item?.name} = ${item?.price} x ${item?.qty} `)}
-        precio total: ${itemsPrice}
-        `;
+        const string=`Hola%2C+vengo+de+la+app+de+carlos+y+quiero+comprar%3A%0D%0A%0D%0A${cartItems.map(item=>`*${item?.name}* *=* *${item?.price}* *x* *${item?.qty}* `)}%0D%0A*Precio:${itemsPrice}*%2F%0D%0A%0D%0AGracias%21`;
         setString(string);
         //eslint-disable-next-line
     },[cartItems]);
-    console.log(cartItems);
+   
 
     return (
         <aside className="block col-1">
@@ -46,7 +43,7 @@ export default function Cart(props){
                         <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
                     </div>
                     <div>
-                        <a target="_blank" rel="noreferrer" href={`https://web.whatsapp.com/send?phone=51956348183&text=${string}` }>
+                        <a target="_blank" rel="noreferrer" href={`https://web.whatsapp.com/send?phone=51956348183&text=hola` }>
                         <button >Enviar pedido</button>
                         </a>
                     </div>  
