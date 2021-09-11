@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Cart from "./components/Cart";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import data from "./data";
+import "./App.css";
 
 function App() {
   
@@ -31,7 +33,7 @@ function App() {
       <Header>
 
       </Header>
-      <div className="row">
+      <div className="Appcontainer">
         <Main onAdd={onAdd} products={products}></Main>
 
         
@@ -39,6 +41,7 @@ function App() {
 
         
       </div>
+      <Footer />
     </div>
   );
 }

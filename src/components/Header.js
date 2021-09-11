@@ -1,11 +1,12 @@
 import React from 'react';
+import "./Header.css";
 
 export default function Header(props) {
   return (
-    <header className="block row center">
+    <header className="header">
       <div>
         
-          <h1>Carrito de compras</h1>
+          <h1>Logo</h1>
         
       </div>
       

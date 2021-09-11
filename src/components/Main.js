@@ -1,13 +1,13 @@
 import React from "react";
 import Product from "./Product";
+import "./Main.css";
 
 export default function Main(props){
     const{products,onAdd} = props;
     return (
-        <main className="block col-2">
-            <h2>Productos</h2>
+        <main className="main">
             
-            <div className="row">
+            <div className="producto">
                 {products.map((product)=>(
                     <Product key={product.id} product={product} onAdd={onAdd}></Product>
                 ))}

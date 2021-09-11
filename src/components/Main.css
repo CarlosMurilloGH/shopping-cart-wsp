@@ -1,0 +1,35 @@
+.main{
+    overflow-y: auto;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    flex: 4;
+}
+
+.producto{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-bottom:50px;
+}
+
+@media screen and (max-width: 1670px){
+    .producto {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 1310px){
+    .producto {
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 10px;
+}
+}
+
+@media screen and (max-width: 570px){
+    .producto {
+    grid-template-columns: 1fr ;
+    column-gap: 10px;
+}
+}

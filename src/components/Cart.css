@@ -1,0 +1,41 @@
+.carrito{
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* adds shadow on hover */
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+  }
+
+.col-1 {
+    flex: 2;
+}
+
+.block {
+    padding: 1rem;
+    margin: 0.5rem;
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.carttext{
+    padding-top: 20px;
+    flex:3
+}
+.col-2 {
+    flex: 3;
+}
+  
+.text-right {
+    text-align: right;
+}
+
+@media screen and (max-width: 860px){
+    .carrito{
+        top:40px;
+        display:block;
+        justify-content:center;
+        align-items:center;
+    }
+}

@@ -1,0 +1,18 @@
+.productcards{
+    background-color: #fff;
+    margin:auto;
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* adds shadow on hover */
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+img.small {
+  max-height: 8rem;
+}
+
+@media screen and (max-width: 860px){
+  img.small {
+    max-height: 8rem;
+}
+}
